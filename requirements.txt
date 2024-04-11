@@ -1,0 +1,10 @@
+llama-index
+openai
+pypdf
+python-dotenv
+deepeval
+ipykernel
+pytest
+transformers
+langchain
+ctransformers

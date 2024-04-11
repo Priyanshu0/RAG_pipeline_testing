@@ -1,0 +1,7 @@
+.streamlit
+.venv
+data/
+output/
+.env
+default.sqlite
+.DS_Store
