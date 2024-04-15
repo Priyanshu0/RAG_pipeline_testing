@@ -5,3 +5,5 @@ output/
 .env
 default.sqlite
 .DS_Store
+*.zip
+models/
