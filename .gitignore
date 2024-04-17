@@ -7,3 +7,5 @@ default.sqlite
 .DS_Store
 *.zip
 models/
+*_Dataset/
+*.csv
