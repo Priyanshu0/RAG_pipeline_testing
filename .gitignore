@@ -10,3 +10,4 @@ models/
 *_Dataset/
 *.csv
 *.json
+__pycache__
