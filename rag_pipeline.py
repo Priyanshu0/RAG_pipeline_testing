@@ -2,6 +2,7 @@ from tqdm.auto import tqdm
 import pandas as pd
 from typing import Optional, List, Tuple
 import os
+import shutil
 import pandas as pd
 
 
@@ -142,6 +143,8 @@ class RAG_pipeline:
             knowledge_index = FAISS.from_documents(
                 docs_processed, self.embedding_model, distance_strategy=DistanceStrategy.COSINE
             )
+            if os.path.isdir(index_folder_path):
+                shutil.rmtree(index_folder_path)
             knowledge_index.save_local(index_folder_path)
             return knowledge_index
         
